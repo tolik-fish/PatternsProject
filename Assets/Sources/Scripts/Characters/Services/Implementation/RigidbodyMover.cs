@@ -17,6 +17,6 @@ namespace Sources.Scripts.Characters.Services.Implementation
 		}
 
 		public void Stop() =>
-			_rigidbody.velocity = Vector3.zero;
+			_rigidbody.linearVelocity = Vector3.zero;
 	}
 }

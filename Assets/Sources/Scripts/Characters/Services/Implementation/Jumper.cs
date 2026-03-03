@@ -12,7 +12,7 @@ namespace Sources.Scripts.Characters.Services.Implementation
 			_rigidbody = rigidbody;
 		}
 
-		public Vector3 Velocity => _rigidbody.velocity;
+		public Vector3 Velocity => _rigidbody.linearVelocity;
 
 		public void Jump(float force) =>
 			_rigidbody.AddForce(Vector3.up * force);
